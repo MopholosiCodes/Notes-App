@@ -1,8 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
 
-export const Home: React.FC = () => {
+export const Auth: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -16,7 +14,6 @@ export const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
       </IonContent>
     </IonPage>
   );
