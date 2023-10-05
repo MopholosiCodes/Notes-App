@@ -1,5 +1,5 @@
 # Notes-App
-Store all notes and important information digitally, usually in a cloud-based storage system
+Store all notes and important information digitally in a cloud-based storage system
 ## Technology Stack
 1. Ionic React
 2. SCSS
