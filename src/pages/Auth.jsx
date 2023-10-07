@@ -19,7 +19,7 @@ import { Footer } from '../components/Auth/Footer';
 import { useState } from 'react';
 
 export const Auth = () => {
-  const [page,setpage] = useState(false)
+  const [page,setPage] = useState(false)
   return (
     <IonPage className=''>
       <AuthHeader 
@@ -41,6 +41,7 @@ export const Auth = () => {
         SignInOption={resource_SignInOption}
         SignUpOption={resource_SignUpOption}
         AuthState={page}
+        changePage={setPage}
       />  
     </IonPage>
   );
