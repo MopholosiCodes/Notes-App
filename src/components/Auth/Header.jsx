@@ -1,11 +1,3 @@
-import { 
-  IonContent, 
-  IonHeader, 
-  IonPage, 
-  IonTitle, 
-  IonToolbar, 
-  IonImg 
-} from '@ionic/react';
 import "./Header.css";
 
 export const Header = ({AuthState, SignInHeader, SignUpHeader}) => {

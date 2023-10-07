@@ -1,12 +1,3 @@
-import { 
-  IonContent, 
-  IonHeader, 
-  IonPage, 
-  IonTitle, 
-  IonToolbar, 
-  IonFooter 
-} from '@ionic/react';
-
 export const Footer = ({SignInLink, SignUpLink, SignUpOption, SignInOption, AuthState}) => {
   return (
     <footer>
