@@ -1,10 +1,4 @@
-import { 
-  IonContent, 
-  IonHeader, 
-  IonPage, 
-  IonTitle, 
-  IonToolbar
-} from '@ionic/react';
+import { IonPage, } from '@ionic/react';
 import { 
   resource_SignInHeader, 
   resource_SignUpHeader, 
@@ -25,7 +19,7 @@ import { Footer } from '../components/Auth/Footer';
 import { useState } from 'react';
 
 export const Auth = () => {
-  const [page,setpage] = useState(false)
+  const [page,setPage] = useState(false)
   return (
     <IonPage className=''>
       <AuthHeader 
@@ -47,6 +41,7 @@ export const Auth = () => {
         SignInOption={resource_SignInOption}
         SignUpOption={resource_SignUpOption}
         AuthState={page}
+        changePage={setPage}
       />  
     </IonPage>
   );

@@ -1,19 +1,10 @@
-import { 
-  IonContent, 
-  IonHeader, 
-  IonPage, 
-  IonTitle, 
-  IonToolbar, 
-  IonFooter 
-} from '@ionic/react';
-
-export const Footer = ({SignInLink, SignUpLink, SignUpOption, SignInOption, AuthState}) => {
+export const Footer = ({SignInLink, SignUpLink, SignUpOption, SignInOption, AuthState, changePage}) => {
   return (
     <footer>
       <span>
             {AuthState 
-              ? <p>{SignInOption} {SignInLink}</p>
-              : <p>{SignUpOption} {SignUpLink}</p>}
+              ? <p>{SignInOption} <button onClick={() => changePage(false)}>{SignInLink}</button></p>
+              : <p>{SignUpOption} <button onClick={() => changePage(true)}>{SignUpLink}</button></p>}
       </span>
     </footer>
   )
